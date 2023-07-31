@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Tablero con Bootstrap 4 - Templune" />
+
+    <title>Inicio BiblioTEC</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/slider.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body style="background-color: #dbdbdb">
+    <div class="d-flex fondo" id="content-wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-container" class="contenedor">
+        <div class="logo">
+          <h4 class="font-weight-bold mb-0">Menu</h4>
+        </div>
+        <div class="menu list-group-flush">
+          <a
+            href="inicioAdmin.html"
+            class="list-group-item list-group-item-action text-muted p-3 border-0"
+            ><i class="icon ion-md-home mr-2"></i> Inicio</a
+          >
+          <a
+            href="tablasUsuarios.html"
+            class="list-group-item list-group-item-action text-muted p-3 border-0"
+            ><i class="icon ion-md-people lead mr-2"></i> Usuarios</a
+          >
+          <a
+            href="librosAdmin.html"
+            class="list-group-item list-group-item-action text-muted p-3 border-0"
+            ><i class="icon ion-md-book lead mr-2"></i> Libros</a
+          >
+        </div>
+      </div>
+      <!-- Fin sidebar -->
+
+      <!-- Page Content -->
+      <!-- Boton -->
+      <div id="" class="w-100 bg-light-blue">
+        <nav class="d-flex align-items-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-1">
+                <button
+                  class="btn btn-dark ion-md-menu"
+                  id="menu-toggle"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Contenido -->
+        <br />
+        <br />
+        <div id="content" class="container-fluid">
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col text-start">
+                <img
+                  class="img-fluid"
+                  src="../img/logo/logo_large.png"
+                  width="320px"
+                /><br />
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- Carrusel -->
+          <div class="container-fluid" style="width: 1200px">
+            <div class="row justify-content-center align-items-center minh-100">
+              <div class="col-5 text-center">
+                <br />
+                <h5 style="text-align: justify">
+                  La Biblioteca es un centro de recursos para el aprendizaje, la
+                  docencia y la investigación y las actividades relacionadas con
+                  el funcionamiento y la gestión de la Universidad en su
+                  conjunto. La Biblioteca tiene como misión facilitar el acceso
+                  y la difusión de los recursos de información y colaborar en
+                  los procesos de creación del conocimiento a fin de contribuir
+                  a la consecución de los objetivos de la Universidad,
+                  realizando las actividades que esto implica de forma
+                  sostenible y socialmente responsable” (Rebiun 2013).
+                </h5>
+              </div>
+
+              <div class="col-7">
+                <div
+                  id="carouselHome"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div
+                      class="carousel-item active img-fluid"
+                      data-bs-interval="3000"
+                    >
+                      <img
+                        src="../img/img1.jpg"
+                        class="d-block w-100"
+                        alt="libro"
+                      />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="../img/img2.jpg"
+                        class="d-block w-100"
+                        alt="alquiler"
+                      />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="../img/img3.jpg"
+                        class="d-block w-100"
+                        alt="alquiler2"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselHome"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselHome"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Propaganda -->
+          <div class="flaxible">
+            <div class="wrapper flaxible">
+              <div class="box">
+                <div></div>
+
+                <div>
+                  <img src="../img/pag.jpg" alt="" />
+                </div>
+
+                <div>
+                  <img src="../img/auto1.jpg" alt="" />
+                </div>
+
+                <div class="flaxible"></div>
+              </div>
+
+              <div class="box">
+                <div></div>
+                <div>
+                  <img src="../img/pag.jpg" alt="" />
+                </div>
+
+                <div>
+                  <img src="../img/auto2.jpg" alt="" />
+                </div>
+
+                <div class="flaxible"></div>
+              </div>
+
+              <div class="box">
+                <div></div>
+
+                <div><img src="../img/pag.jpg" alt="" /></div>
+
+                <div>
+                  <img src="../img/auto3.jpg" alt="" />
+                </div>
+
+                <div class="flaxible"></div>
+              </div>
+
+              <div class="box">
+                <div></div>
+
+                <div>
+                  <img src="../img/pag.jpg" alt="" />
+                </div>
+
+                <div>
+                  <img src="../img/auto4.jpg" alt="" />
+                </div>
+
+                <div class="flaxible"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container p-4 mt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                <div class="div-title d-inline-block w-100">
+                  <h3 class="float-left align-self-end text-uppercase">
+                    misión
+                  </h3>
+                </div>
+                <p>
+                  Contribuir con la educación y el desarrollo, difundiendo la
+                  cultura y el conocimineto
+                </p>
+                <div class="div-title d-inline-block w-100">
+                  <h3 class="float-left align-self-end text-uppercase">
+                    visión
+                  </h3>
+                </div>
+                <p>
+                  Ser reconocido como un referente a la disponibilidad de libros
+                  para todas las personas que lo necesiten. Siempre teniendo en
+                  cuenta los valores que nos representan:
+                </p>
+                <ul class="ml-4">
+                  <li>Ética y Honestidad</li>
+                  <li>Compromiso y lealtad</li>
+                  <li>Responsabilidad</li>
+                  <li>Orientación al cliente</li>
+                  <li>Eficiencia y Efectividad</li>
+                  <li>Trabajo en Equipo</li>
+                  <li>Respeto</li>
+                </ul>
+              </div>
+              <div class="col-lg-8 col-md-10 mb-2 mb-md-0">
+                <img
+                  src="../img/img8.webp"
+                  class="d-block w-100"
+                  alt="libreria"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <!-- Remove the container if you want to extend the Footer to full width. -->
+          <div class="container-fluid my-5">
+            <footer class="bg-dark text-center text-lg-center text-white">
+              <!-- Grid container -->
+              <div class="container p-4 text-center">
+                <!--Grid row-->
+                <div class="row mt-3">
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                    <h5 class="text-uppercase text-white">Buscas un libro</h5>
+
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="icon ion-md-book lead me-2"></i>Mas
+                          vendidos</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="icon ion-md-book lead me-2"></i>Todos los
+                          libros</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="icon ion-md-person lead me-2"></i>Nuestros
+                          autores</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                    <h5 class="text-uppercase text-white">Pedidos</h5>
+
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="fas fa-arrow-circle-up me-2"></i
+                          >Devoluciones</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="far fa-file-alt me-2"></i>Politica</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                    <h5 class="text-uppercase text-white">Contactanos</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!" class="text-white text-decoration-none"
+                          ><i class="icon ion-md-mail lead me-2"></i>Correo</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+
+              <!-- Copyright -->
+              <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+              >
+                © 2022 Copyright:
+                <a class="text-white text-decoration-none" href="#!">Grupo 1</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+          </div>
+          <!-- End of .container -->
+        </div>
+      </div>
+      <!-- Fin Page Content -->
+    </div>
+    <!-- Fin wrapper -->
+
+    <!-- Bootstrap y JQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slider3d.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

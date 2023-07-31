@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Tablero con Bootstrap 4 - Templune" />
+
+
+    <title>Libros</title>
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet" />  -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/slider.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css" rel="stylesheet" />
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body style="background-color: #dbdbdb">
+    
+    <div class="d-flex fondo" id="content-wrapper">
+
+      <!-- Button trigger modal -->
+
+      
+      <!-- Sidebar -->
+      <div id="sidebar-container" class="contenedor">
+        <div class="logo">
+          <h4 class="font-weight-bold mb-0">Menu</h4>
+        </div>
+        <div class="menu list-group-flush">
+          <a href="inicio.html" class="list-group-item list-group-item-action text-muted p-3 border-0" ><i class="icon ion-md-home mr-2"></i> Inicio</a>
+          <a href="librosUser.html" class="list-group-item list-group-item-action text-muted p-3 border-0" ><i class="icon ion-md-book lead mr-2"></i> Libros</a>
+        </div>
+      </div>
+      <!-- Fin sidebar -->
+
+      <!-- Page Content -->
+      <!-- Boton -->
+      <div class="w-100 bg-light-blue">
+        <!-- Button trigger modal -->
+
+        <nav class="d-flex align-items-center">
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              
+              <div class="col-2">
+                <button class="btn btn-dark ion-md-menu" id="menu-toggle" ></button>
+              </div>
+
+              <div class="col-2 text-end">
+                <button id="checkout" type="button" class="btn btn-warning" data-bs-toggle="modal" 
+                data-bs-target="#exampleModal" onclick="pay()"><i class="icon ion-md-cash mr-2"></i></button>
+                  
+              </div>
+
+            </div>
+          </div>
+        </nav>
+
+        <!-- Contenido -->
+        <div id="content" class="container-fluid">
+
+          
+          <div class="row">
+            <div class="col-5 d-flex align-items-center">
+              <div class="row">
+                <h1 class="text-end" style="font-size: 3vw;">Libros Destacados<br>
+                  <h6 class="text-end"></h6><br>
+
+                  
+
+
+                </h1>
+              </div>
+
+            </div>
+
+            <div class="col-7">
+
+              <div class="carousel" data-gap="20" >
+                <figure style="width: 40%">
+                  <img src="../img/des1.jpg" alt="" />
+                  <img src="../img/des2.jpg" alt="" />
+                  <img src="../img/des3.jpg" alt="" />
+                  <img src="../img/des4.jpg" alt="" />
+                  <img src="../img/des5.jpg" alt="" />
+                  <img src="../img/des6.jpg" alt="" />
+                </figure>
+                <nav>
+                  <button class="prev btn btn-dark">Anterior</button>
+                  <button class="next btn btn-dark">Siguiente</button>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="page-content">
+
+                <div class="cards">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des1.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>Citas de Mao Tse-Tung</h2>
+                        <h4>$258</h4>
+                        <p>Obra del ministro de Defensa y jefe de las fuerzas armadas chinas Lin Piao, el conocido como Libro rojo (1964) 
+                          recoge citas y discursos pronunciados por Mao Tse-tung, quien fuera presidente del Partido Comunista de China y 
+                          líder de la República Popular China de 1949 a 1976. Pronto se convertiría en un libro de enseñanza ideológica y 
+                          su aprendizaje en obligatorio en las escuelas de China durante la época de la Revolución Cultural.</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('Citas de Mao Tse-Tung', 258)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des2.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>La Biblia</h2>
+                        <h4>$100</h4>
+                        <p>La Biblia es una colección o recopilación de libros sagrados, que contiene las historias, doctrinas, códigos y 
+                          tradiciones que orientan a los cristianos, con base en la tradición judía (Antiguo Testamento) y el anuncio del 
+                          Evangelio (Nuevo Testamento).</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('La Biblia', 100)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des3.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>El Alquimista</h2>
+                        <h4>$220</h4>
+                        <p>El alquimista relata las aventuras de Santiago, un joven pastor andaluz que viaja desde su tierra natal hacia el desierto 
+                          egipcio en busca de un tesoro oculto en las pirámides. La imaginación y el coraje del protagonista le hacen perseguir su 
+                          "Leyenda Personal". A lo largo del relato, Santiago se encuentra con diferentes personajes que lo ayudan a aprender a mantener 
+                          su valor y, sobre todo, escuchar los dictados del corazón.</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('El Alquimista', 220)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des4.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>El Código da Vinci</h2>
+                        <h4>$580</h4>
+                        <p>El Código Da Vinci es una novela de ficción, en la que su autor, Dan Brown, desarrolla una trama de suspenso 
+                          donde los personajes principales deben descifrar una serie de mensajes y claves para evitar que un importante 
+                          secreto relacionado con la Iglesia Católica se pierda para siempre.</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('El Código da Vinci', 580)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des5.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>Piense y hágase Rico</h2>
+                        <h4>$35</h4>
+                        <p>Un clásico para alcanzar la riqueza Tras más de veinte años investigando científicamente a los hombres más ricos 
+                          de su época, Napoleon Hill aprendió el secreto de la riqueza del famoso industrial y escritor Andrew 
+                          Carnegie.Carnegie no sólo llegó a ser multimillonario sino que hizo millonarios a una multitud de personas a las 
+                          que enseñó su sabiduría.</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('Piense y hágase Rico', 35)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="../img/des6.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 400px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <br>
+                        <h2>El Principito</h2>
+                        <h4>$20</h4>
+                        <p>El alquimista relata las aventuras de Santiago, un joven pastor andaluz que viaja desde su tierra natal hacia el desierto 
+                          egipcio en busca de un tesoro oculto en las pirámides. La imaginación y el coraje del protagonista le hacen perseguir su 
+                          "Leyenda Personal". A lo largo del relato, Santiago se encuentra con diferentes personajes que lo ayudan a aprender a mantener 
+                          su valor y, sobre todo, escuchar los dictados del corazón.</p>
+                        <br><button class="btn btn-warning button-add" onclick="add('El Principito', 20)">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+  
+
+        
+
+  
+
+  
+
+  
+ 
+  
+
+  
+            </div>
+            <br>
+
+
+            </div>
+
+          </div>
+
+          
+
+                <!-- Footer -->
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+
+        <footer class="bg-dark text-center text-lg-center text-white">
+          <!-- Grid container -->
+          <div class="container p-4  text-center">
+            <!--Grid row-->
+            <div class="row mt-3">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                <h5 class="text-uppercase text-white">Buscas un libro</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="icon ion-md-book lead me-2"></i>Mas vendidos</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="icon ion-md-book lead me-2"></i>Todos los libros</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="icon ion-md-person lead me-2"></i>Nuestros autores</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                <h5 class="text-uppercase text-white">Pedidos</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="fas fa-arrow-circle-up me-2"></i>Devoluciones</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="far fa-file-alt me-2"></i>Politica</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-8 mb-2 mb-md-0">
+                <h5 class="text-uppercase text-white">Contactanos</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none"><i class="icon ion-md-mail lead me-2"></i>Correo</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white text-decoration-none" href="#!">Grupo 1</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COMPRAS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="info">%</div><br>
+        <div id="total">%</div><br>
+        <div id="cantidad">%</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <!-- End of .container -->
+        </div>
+      </div>
+      <!-- Fin Page Content -->
+    </div>
+    <!-- Fin wrapper -->
+
+    <!-- Bootstrap y JQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slider3d.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+
+    </script>
+  </body>
+</html>

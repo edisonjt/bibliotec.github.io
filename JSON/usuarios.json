@@ -1,0 +1,49 @@
+{
+    "squadName" : "Super Hero Squad",
+    "homeTown" : "Metro City",
+    "formed" : 2016,
+    "secretBase" : "Super tower",
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Edison Toapanta",
+        "age" : 29,
+        "email" : "ejtoapanta2@espe.edu.ec",
+        "usertype" : "Admin",
+        "telf": "0987568904",
+        "cedula": "1758934572"
+      },
+      {
+        "name" : "Bryan Pazmiño",
+        "age" : 39,
+        "email" : "bapazmino@espe.edu.ec",
+        "usertype" : "Admin",
+        "telf": "0975412589",
+        "cedula": "1754896215"
+      },
+      {
+        "name" : "Jhonatan Tituaña",
+        "age" : 1000000,
+        "email" : "jdtituana@espe.edu.ec",
+        "usertype" : "Admin",
+        "telf": "0987578914",
+        "cedula": "1748596312"      
+      },
+      {
+        "name" : "Pablo Tamayo",
+        "age" : 1000000,
+        "email" : "patamayo@espe.edu.ec",
+        "usertype" : "Admin",
+        "telf": "0973245915",
+        "cedula": "1746932145"        
+      },
+      {
+        "name" : "Rubén Tomalá",
+        "age" : 1000000,
+        "email" : "ratomala@espe.edu.ec",
+        "usertype" : "Admin",
+        "telf": "0952147831",
+        "cedula": "1789654123"        
+      }
+    ]
+  }
